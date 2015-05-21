@@ -1,0 +1,404 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:zigbee-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "27 mar 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 4690 3925
+NoConn ~ 4690 3825
+NoConn ~ 4690 3725
+NoConn ~ 4690 3525
+NoConn ~ 4690 3425
+NoConn ~ 6090 4025
+NoConn ~ 6090 3925
+NoConn ~ 6090 3825
+NoConn ~ 6090 3725
+NoConn ~ 6090 3625
+NoConn ~ 6090 3525
+NoConn ~ 6090 3425
+NoConn ~ 6090 3325
+NoConn ~ 6090 3225
+NoConn ~ 6090 3125
+$Comp
+L R R1
+U 1 1 51B6F651
+P 3490 4475
+F 0 "R1" V 3570 4475 50  0000 C CNN
+F 1 "1k" V 3490 4475 50  0000 C CNN
+F 2 "" H 3490 4475 60  0001 C CNN
+F 3 "" H 3490 4475 60  0001 C CNN
+	1    3490 4475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 51B6F638
+P 3540 4225
+F 0 "D1" H 3540 4325 50  0000 C CNN
+F 1 "LED" H 3540 4125 50  0000 C CNN
+F 2 "" H 3540 4225 60  0001 C CNN
+F 3 "" H 3540 4225 60  0001 C CNN
+	1    3540 4225
+	1    0    0    -1  
+$EndComp
+Text Label 3260 4625 0    60   ~ 0
++5v
+Text Label 2890 3375 0    60   ~ 0
+Rx
+Text Label 2890 3475 0    60   ~ 0
+Tx
+$Comp
+L LED D2
+U 1 1 51B6F59F
+P 4390 3625
+F 0 "D2" H 4390 3725 50  0000 C CNN
+F 1 "LED" H 4390 3525 50  0000 C CNN
+F 2 "" H 4390 3625 60  0001 C CNN
+F 3 "" H 4390 3625 60  0001 C CNN
+	1    4390 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 51B6F592
+P 3890 3625
+F 0 "R2" V 3970 3625 50  0000 C CNN
+F 1 "1k" V 3890 3625 50  0000 C CNN
+F 2 "" H 3890 3625 60  0001 C CNN
+F 3 "" H 3890 3625 60  0001 C CNN
+	1    3890 3625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 51B6F522
+P 2540 3525
+F 0 "P1" V 2490 3525 50  0000 C CNN
+F 1 "CONN_4" V 2590 3525 50  0000 C CNN
+F 2 "" H 2540 3525 60  0001 C CNN
+F 3 "" H 2540 3525 60  0001 C CNN
+	1    2540 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM1117 U1
+U 1 1 51B6F4D7
+P 4240 4625
+F 0 "U1" H 4240 4825 60  0000 C CNN
+F 1 "LM1117" H 4240 4725 60  0000 C CNN
+F 2 "" H 4240 4625 60  0001 C CNN
+F 3 "" H 4240 4625 60  0001 C CNN
+	1    4240 4625
+	1    0    0    1   
+$EndComp
+$Comp
+L ZIGBEE_XL U2
+U 1 1 51B6E245
+P 5390 3475
+F 0 "U2" H 5390 4025 60  0000 C CNN
+F 1 "ZIGBEE_XL" H 5390 4175 60  0000 C CNN
+F 2 "" H 5390 3475 60  0001 C CNN
+F 3 "" H 5390 3475 60  0001 C CNN
+	1    5390 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB9 J1
+U 1 1 52A3EE4E
+P 7270 3515
+F 0 "J1" H 7270 4065 70  0000 C CNN
+F 1 "DB9" H 7270 2965 70  0000 C CNN
+F 2 "" H 7270 3515 60  0001 C CNN
+F 3 "" H 7270 3515 60  0001 C CNN
+	1    7270 3515
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 52A3EE54
+P 7720 3965
+F 0 "#PWR01" H 7720 3965 30  0001 C CNN
+F 1 "GND" H 7720 3895 30  0001 C CNN
+F 2 "" H 7720 3965 60  0001 C CNN
+F 3 "" H 7720 3965 60  0001 C CNN
+	1    7720 3965
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7720 3115
+NoConn ~ 7720 3215
+NoConn ~ 7720 3615
+NoConn ~ 7720 3715
+NoConn ~ 7720 3815
+$Comp
+L C C4
+U 1 1 52A3EE5F
+P 9620 4215
+F 0 "C4" H 9670 4315 50  0000 L CNN
+F 1 "0.1uF" H 9670 4115 50  0000 L CNN
+F 2 "" H 9620 4215 60  0001 C CNN
+F 3 "" H 9620 4215 60  0001 C CNN
+	1    9620 4215
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 52A3EE65
+P 9620 3715
+F 0 "C3" H 9670 3815 50  0000 L CNN
+F 1 "0.1uF" H 9670 3615 50  0000 L CNN
+F 2 "" H 9620 3715 60  0001 C CNN
+F 3 "" H 9620 3715 60  0001 C CNN
+	1    9620 3715
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 52A3EE6B
+P 7870 3715
+F 0 "C1" H 7920 3815 50  0000 L CNN
+F 1 "0.1uF" H 7920 3615 50  0000 L CNN
+F 2 "" H 7870 3715 60  0001 C CNN
+F 3 "" H 7870 3715 60  0001 C CNN
+	1    7870 3715
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 52A3EE71
+P 7870 4215
+F 0 "C2" H 7920 4315 50  0000 L CNN
+F 1 "0.1uF" H 7920 4115 50  0000 L CNN
+F 2 "" H 7870 4215 60  0001 C CNN
+F 3 "" H 7870 4215 60  0001 C CNN
+	1    7870 4215
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9620 3015
+NoConn ~ 9620 3215
+NoConn ~ 8020 3015
+NoConn ~ 8020 3215
+NoConn ~ 7720 3415
+Text Notes 7020 2865 0    50   ~ 10
+SERIAL INTERFACE\n
+$Comp
+L MAX232 U4
+U 1 1 52A3EE7D
+P 8820 3715
+F 0 "U4" H 8820 4565 70  0000 C CNN
+F 1 "MAX232" H 8820 2865 70  0000 C CNN
+F 2 "" H 8820 3715 60  0001 C CNN
+F 3 "" H 8820 3715 60  0001 C CNN
+	1    8820 3715
+	-1   0    0    1   
+$EndComp
+Text Label 9620 3315 0    60   ~ 0
+Tx
+Text Label 9620 3115 0    60   ~ 0
+Rx
+Text Label 7410 4355 0    60   ~ 0
++5v
+$Comp
+L CONN_3 K1
+U 1 1 52A3EE91
+P 1630 4045
+F 0 "K1" V 1580 4045 50  0000 C CNN
+F 1 "CONN_3" V 1680 4045 40  0000 C CNN
+F 2 "~" H 1630 4045 60  0000 C CNN
+F 3 "~" H 1630 4045 60  0000 C CNN
+	1    1630 4045
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 52A3EEDE
+P 1980 4215
+F 0 "#PWR02" H 1980 4215 30  0001 C CNN
+F 1 "GND" H 1980 4145 30  0001 C CNN
+F 2 "" H 1980 4215 60  0000 C CNN
+F 3 "" H 1980 4215 60  0000 C CNN
+	1    1980 4215
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM1117 U3
+U 1 1 52A3EF67
+P 2860 4625
+F 0 "U3" H 2860 4825 60  0000 C CNN
+F 1 "LM1117" H 2860 4725 60  0000 C CNN
+F 2 "" H 2860 4625 60  0001 C CNN
+F 3 "" H 2860 4625 60  0001 C CNN
+	1    2860 4625
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 52A3EF77
+P 4690 4105
+F 0 "#PWR03" H 4690 4105 30  0001 C CNN
+F 1 "GND" H 4690 4035 30  0001 C CNN
+F 2 "" H 4690 4105 60  0000 C CNN
+F 3 "" H 4690 4105 60  0000 C CNN
+	1    4690 4105
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3190 3475 3190 3225
+Wire Wire Line
+	3190 3475 2890 3475
+Wire Wire Line
+	3190 3225 4690 3225
+Wire Wire Line
+	3340 4225 3240 4225
+Wire Wire Line
+	3240 4225 3240 4475
+Connection ~ 3740 4625
+Wire Wire Line
+	3740 4475 3740 4625
+Wire Wire Line
+	4590 3625 4690 3625
+Wire Wire Line
+	3640 3625 3640 3325
+Wire Wire Line
+	4690 3125 4690 2575
+Wire Wire Line
+	4690 2575 6590 2575
+Wire Wire Line
+	6590 2575 6590 4625
+Wire Wire Line
+	6590 4625 4640 4625
+Wire Wire Line
+	4240 4025 4240 4275
+Wire Wire Line
+	3640 3325 4690 3325
+Wire Wire Line
+	4140 3625 4190 3625
+Wire Wire Line
+	2890 3575 3340 3575
+Wire Wire Line
+	3340 3575 3340 4025
+Wire Wire Line
+	3340 4025 4690 4025
+Connection ~ 4240 4025
+Wire Wire Line
+	3740 4225 3740 4025
+Connection ~ 3740 4025
+Wire Wire Line
+	2890 3375 3640 3375
+Connection ~ 3640 3375
+Wire Notes Line
+	6970 4565 6970 2765
+Wire Notes Line
+	6970 4565 9870 4565
+Wire Notes Line
+	9870 4565 9870 2765
+Wire Notes Line
+	9870 2765 6970 2765
+Wire Wire Line
+	8020 3315 7720 3315
+Wire Wire Line
+	7720 3965 7720 3915
+Wire Wire Line
+	8020 3515 7870 3515
+Connection ~ 7870 3965
+Wire Wire Line
+	8020 3815 8020 3965
+Wire Wire Line
+	8020 3965 7820 3965
+Wire Wire Line
+	7820 3965 7820 3915
+Wire Wire Line
+	7820 3915 7720 3915
+Connection ~ 7720 3915
+Connection ~ 7870 4015
+Connection ~ 8020 4015
+Connection ~ 8020 3515
+Connection ~ 8020 3315
+Connection ~ 8020 3115
+Connection ~ 9620 3915
+Connection ~ 9620 3515
+Connection ~ 9620 4015
+Connection ~ 9620 4415
+Connection ~ 8020 4415
+Connection ~ 7870 4415
+Wire Wire Line
+	8020 3115 7770 3115
+Wire Wire Line
+	7770 3115 7770 3515
+Wire Wire Line
+	7770 3515 7720 3515
+Wire Wire Line
+	7870 4015 8020 4015
+Wire Wire Line
+	7870 3915 7870 3965
+Wire Notes Line
+	6970 2885 7710 2885
+Wire Notes Line
+	7710 2885 7710 2765
+Wire Notes Line
+	7710 2765 7720 2765
+Wire Wire Line
+	8020 4415 7410 4415
+Wire Wire Line
+	7410 4415 7410 4355
+Wire Wire Line
+	1980 4045 1980 4215
+Connection ~ 1980 4145
+Wire Wire Line
+	4690 4025 4690 4105
+Wire Wire Line
+	2860 4275 2860 4015
+Wire Wire Line
+	2860 4015 3340 4015
+Connection ~ 3340 4015
+Wire Wire Line
+	2890 3945 2890 3675
+Wire Wire Line
+	3260 4625 3840 4625
+Wire Wire Line
+	2360 4625 2360 3945
+Wire Wire Line
+	2360 3945 2365 3945
+Connection ~ 2365 3945
+Wire Wire Line
+	1980 3945 2890 3945
+$EndSCHEMATC
